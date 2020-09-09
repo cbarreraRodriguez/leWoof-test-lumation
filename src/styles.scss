@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #E6E6E6;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none !important;
+  box-shadow: none !important;
+}
