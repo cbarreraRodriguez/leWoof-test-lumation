@@ -60,3 +60,53 @@
     }
   }
 }
+.green-loading-span {
+  color: green;
+  font-size: 1em;
+}
+.red-error-span {
+  color: red;
+  font-size: 1em;
+}
+
+.floating-bottom-button {
+  position: fixed;
+  background-color: #EF727C;
+  bottom: 1em;
+  right: 1em;
+  color: white;
+  font-size: 4em;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  transition: ease all 0.5s;
+  &:hover {
+    transition: ease all 0.5s;
+    cursor: pointer;
+    transform: scale(1.04);
+
+  }
+}
+
+
+@keyframes arrowDown {
+  0% {
+    bottom: 1em
+  }
+
+  50% {
+    bottom: 2em
+  }
+
+  100% {
+    bottom: 1em
+  }
+}
+
+
+.jumping-element {
+  animation: arrowDown 1s infinite;
+  transition: ease all .5s;
+}

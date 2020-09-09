@@ -18,8 +18,9 @@
         <div class="form-group col-lg-12 selection-container">
           <div class="row">
             <div class="col-lg-6">
+              <span class="green-loading-span" *ngIf="loadingRandomImage">Cargando imagen...</span>
               <img (click)="getRandomImage()" class="img-placeholder" src="{{currentBreed.currentImage ? currentBreed.currentImage : '/assets/img/placeholder-image.png'}}" alt="">
-            </div>
+              <span class="red-error-span">{{errorText}}</span></div>
             <div class="col-lg-6">
               <div class="form-group col-lg-12">
                 <label for="race-name">Nombre raza</label>
@@ -40,6 +41,9 @@
       </form>
     </div>
   </div>
+  <button class="floating-bottom-button" (click)="cleanData()" [ngClass]="jumpingButton ? 'jumping-element' : ''">
+    X
+  </button>
 </section>
 
 
